@@ -1,0 +1,277 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.tesla {
+  background-image: url(../img/Tesla.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  margin-top: 20px;
+  height: 320px;
+  width: 1100px;
+  position: relative;
+  margin-bottom: 100px;
+}
+.tesla .wheel-left {
+  position: absolute;
+  width: 100px;
+  top: 150px;
+  right: 295px;
+  transition: 1s ease;
+  animation: wheel 0.5s linear infinite;
+}
+.tesla .wheel-right {
+  position: absolute;
+  width: 100px;
+  top: 150px;
+  left: 275px;
+  transition: 1s ease;
+  animation: wheel 0.5s linear infinite;
+}
+@keyframes wheel {
+  100% {
+    rotate: -360deg;
+  }
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+  padding-bottom: 40px;
+}
+.main .main-item h3 {
+  color: #707070;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-bottom: 5px;
+}
+.main .main-item h1 {
+  color: #000;
+  font-family: Gilroy;
+  font-size: 39px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.tools {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.tools .tool {
+  display: flex;
+  gap: 17px;
+}
+.tools .tool .text h3 {
+  color: #707070;
+  font-family: Gilroy;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.tools .tool .text h1 {
+  color: #000;
+  font-family: Gilroy;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.tools .tool .arrows {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.tools .tool .arrows button {
+  background: 0;
+  border: 0;
+  cursor: pointer;
+}
+.tools .toggles h3 {
+  color: #707070;
+  font-family: Gilroy;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-bottom: 10px;
+}
+.tools .toggles .switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 25.5px;
+  background-color: #ccc;
+  border-radius: 30px;
+}
+.tools .toggles .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.tools .toggles .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: 0.4s;
+  border-radius: 30px;
+  transition: 0.4s ease;
+}
+.tools .toggles .slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s ease;
+}
+.tools .toggles input:checked + .slider {
+  background-color: #004ffa;
+}
+.tools .toggles input:checked + .slider:before {
+  transform: translateX(18px);
+}
+.tools .view-switch h3 {
+  color: #707070;
+  font-family: Gilroy;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-bottom: 10px;
+}
+.tools .view-switch .switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 25.5px;
+  background-color: #ccc;
+  border-radius: 30px;
+}
+.tools .view-switch .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.tools .view-switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: 0.4s;
+  border-radius: 30px;
+  transition: 0.4s ease;
+}
+.tools .view-switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s ease;
+}
+.tools .view-switch input:checked + .slider {
+  background-color: #004ffa;
+}
+.tools .view-switch input:checked + .slider:before {
+  transform: translateX(18px);
+}
+
+.colors .colors-flex {
+  display: flex;
+  gap: 7px;
+}
+.colors .colors-flex .color-box {
+  cursor: pointer;
+  border: 3px solid rgba(112, 112, 112, 0);
+  padding: 5px;
+  border-radius: 50%;
+}
+.colors .colors-flex .color-box:hover {
+  border: 3px solid rgba(112, 112, 112, 0.4823529412);
+  padding: 5px;
+  border-radius: 50%;
+}
+.colors .colors-flex .color-box-active {
+  border: 3px solid #004ffa;
+}
+.colors .colors-flex .color {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.colors .colors-flex .black {
+  background-color: rgb(38, 38, 38);
+}
+.colors .colors-flex .white {
+  background-color: rgb(239, 239, 239);
+}
+.colors .colors-flex .milk {
+  background-color: rgb(230, 221, 208);
+}
+
+.colors h3 {
+  color: #707070;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-bottom: 5px;
+  padding-left: 10px;
+}
+
+.color-unvisible {
+  display: none !important;
+}
+
+.tool-unvisible {
+  display: none !important;
+}
+
+.tesla-unvisible {
+  display: none !important;
+}
+
+.salon-visible {
+  background-image: url(../img/black-salon.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 900px;
+  height: 450px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  transition: 0.7s ease;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESLA CHARGE</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./Gilroy/stylesheet.css">
+</head>
+<body>
+
+    <div class="tesla">
+        <img class="wheel-left wheel" src="./img/Wheel19.png" alt="">
+        <img class="wheel-right wheel" src="./img/Wheel19.png" alt="">
+    </div>
+
+    <div class="salon"></div>
+
+    <div class="main">
+        <div class="main-item">
+            <h3>Запас хода</h3>
+            <h1 class="capacity">750км</h1>
+        </div>
+        <div class="main-item">
+            <h3>Цена</h3>
+            <h1>$89, 990</h1>
+        </div>
+    </div>
+
+    <div class="tools">
+
+        <div class="tool">
+            <div class="text">
+                <h3>Скорость автомобиля</h3>
+                <h1 class="speed">60 км/ч</h1> 
+            </div>
+            <div class="arrows speed-btns">
+                <button class="speed-up"><img src="./img/tesla-arrowUP.svg" alt=""></button>
+                <button class="speed-down"><img src="./img/tesla-arrowDOWN.svg" alt=""></button>
+            </div>
+        </div>
+
+        <div class="tool">
+            <div class="text">
+                <h3>Температура за окнами</h3>
+                <h1 class="temp">20°</h1> 
+            </div>
+            <div class="arrows temp-btns">
+                <button class="temp-up"><img src="./img/tesla-arrowUP.svg" alt=""></button>
+                <button class="temp-down"><img src="./img/tesla-arrowDOWN.svg" alt=""></button>
+            </div>
+        </div>
+
+        <div class="tool">
+            <div class="text">
+                <h3>Диски</h3>
+                <h1 class="radius">19 </h1> 
+            </div>
+            <div class="arrows radius-btns">
+                <button class="radius-btn-up"><img src="./img/tesla-arrowUP.svg" alt=""></button>
+                <button class="radius-btn-down"><img src="./img/tesla-arrowDOWN.svg" alt=""></button>
+            </div>
+        </div>
+        
+        <div class="toggles">
+            <h3 class="conditioner">Кондиционер</h3>
+
+            <label class="switch">
+                <input class="conditioner-btn" type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="toggles">
+            <h3>Версия Long Range</h3>
+
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="colors color-unvisible">
+            <h3>Цвет салона</h3>
+
+            <div class="colors-flex">
+                <div class="color-box" id="black">
+                    <div class="color black"></div>
+                </div>
+                <div class="color-box" id="white">
+                    <div class="color white" id="white"></div>
+                </div>
+                <div class="color-box" id="milk">
+                    <div class="color milk" id="milk"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="view-switch">
+            <h3>Вид автомобиля</h3>
+
+            <label class="switch view">
+                <input type="checkbox" checked>
+                <span class="slider"></span>
+            </label>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
